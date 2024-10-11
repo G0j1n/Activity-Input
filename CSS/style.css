@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size:x-large;
     margin: 20px;
     background-color: #FF4500; /* Warna latar belakang merah */
     color: #fff;
@@ -22,10 +23,11 @@ form {
 
 label {
     display: block;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 input, select {
+    font-size:x-large;
     padding: 8px;
     width: 100%;
     box-sizing: border-box;
@@ -35,6 +37,7 @@ input, select {
 
 button {
     padding: 8px 12px;
+    font-size:x-large;
     background-color: #007bff;
     color: white;
     border: none;
