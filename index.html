@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Input Form</title>
+    <link rel="stylesheet" href="CSS\style.css">
+</head>
+<body>
+    <h1>Input Data</h1>
+    <form id="dataForm">
+        <div class="form-grid">
+            <!-- Row 1 -->
+            <div>
+                <label for="date">Date (1-31):</label>
+                <select id="date" required>
+                    <option value="">Select Date</option>
+                    <script>
+                        for (let day = 1; day <= 31; day++) {
+                            document.write(`<option value="${day}">${day}</option>`);
+                        }
+                    </script>
+                </select>
+            </div>
+            <div>
+                <label for="week">Week (1-54):</label>
+                <select id="week" required>
+                    <option value="">Select Week</option>
+                    <script>
+                        for (let week = 1; week <= 54; week++) {
+                            document.write(`<option value="${week}">${week}</option>`);
+                        }
+                    </script>
+                </select>
+            </div>
+            <div>
+                <label for="month">Month:</label>
+                <select id="month" required>
+                    <option value="">Select Month</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+            <div>
+                <label for="year">Year (2022-2028):</label>
+                <select id="year" required>
+                    <option value="">Select Year</option>
+                    <script>
+                        for (let year = 2022; year <= 2028; year++) {
+                            document.write(`<option value="${year}">${year}</option>`);
+                        }
+                    </script>
+                </select>
+            </div>
+
+            <!-- Row 2 -->
+            <div>
+                <label for="msisdn">MSISDN:</label>
+                <input type="text" id="msisdn" required>
+            </div>
+            <div>
+                <label for="category">Category:</label>
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option value="Complain">Complain</option>
+                    <option value="Event">Event</option>
+                    <option value="Bad Spot">Bad Spot</option>
+                </select>
+            </div>
+            <div>
+                <label for="issue">Issue:</label>
+                <select id="issue" required>
+                    <option value="">Select Issue</option>
+                    <option value="Coverage">Coverage</option>
+                    <option value="Quality">Quality</option>
+                    <option value="Throughput">Throughput</option>
+                    <option value="Blank Spot">Blank Spot</option>
+                </select>
+            </div>
+            <div>
+                <label for="location">Location:</label>
+                <input type="text" id="location" required>
+            </div>
+
+            <!-- Row 3 -->
+            <div>
+                <label for="branch">Branch:</label>
+                <select id="branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="Kota Tasik">Kota Tasik</option>
+                    <option value="Tasikmalaya">Tasikmalaya</option>
+                    <option value="Ciamis">Ciamis</option>
+                    <option value="Kota Banjar">Kota Banjar</option>
+                    <option value="Garut">Garut</option>
+                    <option value="Pangandaran">Pangandaran</option>
+                </select>
+            </div>
+            <div>
+                <label for="nop">NOP:</label>
+                <input type="text" id="nop" required>
+            </div>
+            <div>
+                <label for="action">Action:</label>
+                <select id="action" required>
+                    <option value="">Select Action</option>
+                    <option value="Follow Up">Follow Up</option>
+                    <option value="Parameter Tuning">Parameter Tuning</option>
+                    <option value="Physical Tuning">Physical Tuning</option>
+                </select>
+            </div>
+            <div>
+                <label for="status">Status:</label>
+                <select id="status" required>
+                    <option value="">Select Status</option>
+                    <option value="Closed">Closed</option>
+                    <option value="Open">Open</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Data Table</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Week</th>
+                <th>Month</th>
+                <th>Year</th>
+                <th>MSISDN</th>
+                <th>Category</th>
+                <th>Issue</th>
+                <th>Location</th>
+                <th>Branch</th>
+                <th>NOP</th>
+                <th>Action</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data akan ditambahkan di sini -->
+        </tbody>
+    </table>
+
+    <script src="JS\script.js"></script>
+</body>
+</html>
